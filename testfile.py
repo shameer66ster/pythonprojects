@@ -1,8 +1,16 @@
-user_promt = "Enter a Todo:"
 todos = []
 while True:
-  todo = input(user_promt)
-  todos.append(todo)
-  print(todos)
+  user_action = input("Type add or show or exit: ")
+  match user_action:
+    case 'add':
+      todo = input("Enter a todo: ")
+      todos.append(todo)
+    case 'show':
+      print(todos)
+    case 'exit':
+      break 
+    
+print("Byee")       
+  
  
  
